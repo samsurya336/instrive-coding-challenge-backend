@@ -1,6 +1,5 @@
 exports.successResponse = (response, data) => {
   const _data = data ? data : null;
-  console.log("successResponse : ", _data);
   return response.status(200).send({
     status: true,
     data: _data,
